@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>   
+          .fade {
+               position: relative;
+               width: 100%;
+               min-height: 60vh;
+               top:  -25px;
+               background-image: linear-gradient(0deg, transparent, black 75%);
+               z-index: 1;
+          }
+       
+          section{
+              display: flex;
+              justify-content: center;
+              position: relative;
+              height: 100vh;
+              color: #feda4a;
+              font-family: 'Pathway Gothic One', sans-serif;
+              font-size: 500%;
+              font-weight: 600;
+              letter-spacing: 6px;
+              line-height: 150%;
+              perspective: 400px;
+              text-align: justify;
+
+          }
+          .text-container{
+               position: relative;
+               transform-origin: 50% 100%;
+               animation: starWars 50s linear;
+          }    
+         
+          @keyframes starWars{
+                 0%
+                 {
+                     top: 0;
+                     transform: rotateX(20deg) translateZ(0);
+                 }
+                 100%{
+                      top: -7000px;
+                     transform: rotateX(25deg) translateZ(-2500px);
+                 }
+          }
+          
+    
+      </style>
+    </head>
+    <body>
+        <div class="fade"></div>
+        <section>
+            <div class="text-container">
+                <div class="intro">
+                     <h5>Episode I</h5>
+                     <h1> The Phantom Menace</h1>
+                </div>
+                <p> Turmoil has engulfed the
+Galactic Republic. The taxation
+of trade routes to outlying star
+systems is in dispute.
+ 
+<br>
+Hoping to resolve the matter
+with a blockade of deadly
+battleships, the greedy Trade
+Federation has stopped all
+shipping to the small planet
+of Naboo.
+<br>
+While the Congress of the
+Republic endlessly debates
+this alarming chain of events,
+the Supreme Chancellor has
+secretly dispatched two Jedi
+Knights, the guardians of
+peace and justice in the
+galaxy, to settle the conflict....
+</p>
+</div>
+    </body>
+</html>
